@@ -1,0 +1,28 @@
+<div class="index_main">
+  <div class="post_contents">
+    <% @chats.each do |chat| %>
+    <div class="post_content">
+      <div class="content">
+        <div class="content_num">0</div>
+        <div class="content_unit">content</div>
+      </div>
+
+      <div class="question">
+        <div class="question_top">
+          <div class="question_top_title">
+            <%= chat.title %>
+          </div>
+          <div class="question_top__name">
+              <%= chat.name %>
+          </div>
+        </div>
+        <div class="question_bottom">
+          <div class="question_bottom_content">
+            <%= chat.content %>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <% end %>
+  </div>
+</div>
