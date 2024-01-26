@@ -10,7 +10,7 @@
       <div class="question">
         <div class="question_top">
           <div class="question_top_title">
-            <%= chat.title %>
+            <%= link_to chat.title, chat_path(chat.id) %>
           </div>
           <div class="question_top__name">
               <%= chat.name %>

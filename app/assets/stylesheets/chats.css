@@ -116,6 +116,11 @@ header {
   font-size: 14px;
 }
 
+.question_top_title a{
+  color: #000000;
+}
+
+
 .question_top_name {
   font-size: 12px;
   text-align: right;

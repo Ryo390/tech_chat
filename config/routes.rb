@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root to: "chats#index"
-  get "/index", to: "chats#index", as: :index
-  get "/new", to: "chats#new", as: :new_chat
-  post "/new", to: "chats#create"
+  resources :chats, only: [:index, :show, :new, :create]do
+  resources :answers, only: :create
+  end
 end
-
